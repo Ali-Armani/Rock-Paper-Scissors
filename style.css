@@ -15,3 +15,14 @@
       color: rgb(255, 255, 255);
       margin-top: 3.5rem;
     }
+
+.reset-btn {
+      padding: 1.5rem;
+      border: 1rem;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      background-color: rgb(8, 118, 21);
+      color: aliceblue;
+      margin-top: 5rem;
+      margin-left: 40%;
+    }
