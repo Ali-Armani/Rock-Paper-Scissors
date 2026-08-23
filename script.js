@@ -1,4 +1,4 @@
-let winTimes = 0;
+    let winTimes = 0;
     let loseTimes = 0;
     let tieTimes = 0;
 
