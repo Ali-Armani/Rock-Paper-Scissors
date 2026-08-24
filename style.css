@@ -25,6 +25,8 @@
       display: block;
 }
 
+.js-result,
+.js-moves,
 .js-score {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.25rem;
