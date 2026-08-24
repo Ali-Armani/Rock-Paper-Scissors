@@ -45,6 +45,11 @@
       }
 
 
+      function updateScoreElement () {
+        document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Ties: ${tieTimes}`;
+      }
+
+
       alert(
         `You picked ${playerMove}.
 Computer picked ${computerMove}.
