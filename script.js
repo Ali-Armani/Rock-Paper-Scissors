@@ -2,6 +2,7 @@
     let loseTimes = 0;
     let tieTimes = 0;
 
+    updateScoreElement();
 
     function playGame(playerMove) {
 
@@ -44,8 +45,9 @@
 
       }
 
+        updateScoreElement();
 
-      function updateScoreElement () {
+        function updateScoreElement () {
         document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Ties: ${tieTimes}`;
       }
 
