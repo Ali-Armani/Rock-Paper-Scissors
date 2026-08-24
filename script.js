@@ -55,6 +55,8 @@ function updateScoreElement() {
       }
 
       localStorage.setItem('score', JSON.stringify(score));
+
+      document.querySelector('.js-result').innerHTML = result;
         
     }
 
