@@ -61,6 +61,8 @@ function updateScoreElement() {
       document.querySelector('.js-moves').innerHTML =
     `You picked ${playerMove}.<br>
      Computer picked ${computerMove}.`;
+
+      updateScoreElement();
         
     }
 
