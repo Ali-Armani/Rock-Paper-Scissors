@@ -11,11 +11,11 @@
       let computerMove = '';
 
       if (randomNumber < 1 / 3) {
-        computerMove = 'Rock';
+        computerMove = '🪨';
       } else if (randomNumber < 2 / 3) {
-        computerMove = 'Paper';
+        computerMove = '📃';
       } else {
-        computerMove = 'Scissors';
+        computerMove = '✂️';
       }
 
 
@@ -29,9 +29,9 @@
 
       } 
       else if (
-        (playerMove === 'Rock' && computerMove === 'Scissors') ||
-        (playerMove === 'Paper' && computerMove === 'Rock') ||
-        (playerMove === 'Scissors' && computerMove === 'Paper')
+        (playerMove === '🪨' && computerMove === '✂️') ||
+        (playerMove === '📃' && computerMove === '🪨') ||
+        (playerMove === '✂️' && computerMove === '📃')
       ) {
 
         result = 'You win!';
