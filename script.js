@@ -66,14 +66,14 @@ function updateScoreElement() {
         
     }
 
+function resetScore() {
 
+  score.wins = 0;
+  score.losses = 0;
+  score.draws = 0;
 
-    function resetScore() {
+  localStorage.setItem('score', JSON.stringify(score));
 
-      winTimes = 0;
-      loseTimes = 0;
-      drawTimes = 0;
+  updateScoreElement();
 
-      alert('Score reset.');
-
-    }
+}
