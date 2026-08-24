@@ -77,5 +77,6 @@ function resetScore() {
   updateScoreElement();
 
   document.querySelector('.js-result').innerHTML = '';
+  document.querySelector('.js-moves').innerHTML = '';
 
 }
