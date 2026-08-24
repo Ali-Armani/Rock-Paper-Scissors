@@ -20,6 +20,10 @@
       background-color: rgb(16, 138, 187);
 }
 
+.score-container {
+      display: block;
+}
+
 .js-score {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.25rem;
