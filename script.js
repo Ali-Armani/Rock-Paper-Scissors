@@ -57,6 +57,10 @@ function updateScoreElement() {
       localStorage.setItem('score', JSON.stringify(score));
 
       document.querySelector('.js-result').innerHTML = result;
+
+      document.querySelector('.js-moves').innerHTML =
+    `You picked ${playerMove}.<br>
+     Computer picked ${computerMove}.`;
         
     }
 
