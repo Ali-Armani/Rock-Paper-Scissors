@@ -1,6 +1,8 @@
-    let winTimes = 0;
-    let loseTimes = 0;
-    let drawTimes = 0;
+const score = JSON.parse(localStorage.getItem('score')) || {
+  wins: 0,
+  losses: 0,
+  draws: 0
+};
 
     updateScoreElement();
 
