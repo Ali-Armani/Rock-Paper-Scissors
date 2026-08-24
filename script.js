@@ -50,7 +50,7 @@ function updateScoreElement() {
       else {
 
         result = 'You lose.';
-        loseTimes++;
+        score.losses++;
 
       }
 
