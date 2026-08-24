@@ -34,7 +34,7 @@ function updateScoreElement() {
       if (playerMove === computerMove) {
 
         result = 'Draw.';
-        drawTimes++;
+        score.draws++;
 
       } 
       else if (
