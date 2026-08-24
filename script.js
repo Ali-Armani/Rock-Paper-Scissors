@@ -4,7 +4,14 @@ const score = JSON.parse(localStorage.getItem('score')) || {
   draws: 0
 };
 
-    updateScoreElement();
+updateScoreElement();
+
+function updateScoreElement() {
+  document.querySelector('.js-score').innerHTML =
+    `Wins: ${score.wins}<br>
+     Losses: ${score.losses}<br>
+     Draws: ${score.draws}`;
+}
 
     function playGame(playerMove) {
 
@@ -45,15 +52,6 @@ const score = JSON.parse(localStorage.getItem('score')) || {
         result = 'You lose.';
         loseTimes++;
 
-      }
-
-        updateScoreElement();
-
-        function updateScoreElement () {
-        document.querySelector('.js-result').innerHTML = `${result}`;
-        document.querySelector('.js-moves').innerHTML = `You picked ${playerMove}.
-        Computer picked ${computerMove}.`;
-        document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Draws: ${drawTimes}`;
       }
         
     }
