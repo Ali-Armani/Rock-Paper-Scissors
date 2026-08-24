@@ -49,6 +49,8 @@
 
         function updateScoreElement () {
         document.querySelector('.js-result').innerHTML = `${result}`;
+        document.querySelector('.js-moves').innerHTML = `You picked ${playerMove}.
+        Computer picked ${computerMove}.`;
         document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Draws: ${drawTimes}`;
       }
         
