@@ -54,7 +54,7 @@ function updateScoreElement() {
 
       }
 
-      
+      localStorage.setItem('score', JSON.stringify(score));
         
     }
 
