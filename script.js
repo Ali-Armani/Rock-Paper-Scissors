@@ -44,7 +44,7 @@ function updateScoreElement() {
       ) {
 
         result = 'You win!';
-        winTimes++;
+        score.wins++;
 
       } 
       else {
