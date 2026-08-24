@@ -1,6 +1,6 @@
     let winTimes = 0;
     let loseTimes = 0;
-    let tieTimes = 0;
+    let drawTimes = 0;
 
     updateScoreElement();
 
@@ -24,8 +24,8 @@
 
       if (playerMove === computerMove) {
 
-        result = 'Tie.';
-        tieTimes++;
+        result = 'Draw.';
+        drawTimes++;
 
       } 
       else if (
@@ -48,7 +48,7 @@
         updateScoreElement();
 
         function updateScoreElement () {
-        document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Ties: ${tieTimes}`;
+        document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Draws: ${drawTimes}`;
       }
 
 
@@ -60,7 +60,7 @@ Computer picked ${computerMove}.
 
 Wins: ${winTimes}
 Loses: ${loseTimes}
-Ties: ${tieTimes}`
+Draws: ${drawTimes}`
       );
 
     }
@@ -71,7 +71,7 @@ Ties: ${tieTimes}`
 
       winTimes = 0;
       loseTimes = 0;
-      tieTimes = 0;
+      drawTimes = 0;
 
       alert('Score reset.');
 
