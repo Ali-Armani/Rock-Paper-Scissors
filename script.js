@@ -76,4 +76,6 @@ function resetScore() {
 
   updateScoreElement();
 
+  document.querySelector('.js-result').innerHTML = '';
+
 }
