@@ -48,21 +48,10 @@
         updateScoreElement();
 
         function updateScoreElement () {
+        document.querySelector('.js-result').innerHTML = `${result}`;
         document.querySelector('.js-score').innerHTML = `Wins: ${winTimes}<br>Losses: ${loseTimes}<br>Draws: ${drawTimes}`;
       }
-
-
-      alert(
-        `You picked ${playerMove}.
-Computer picked ${computerMove}.
-
-** ${result} **
-
-Wins: ${winTimes}
-Loses: ${loseTimes}
-Draws: ${drawTimes}`
-      );
-
+        
     }
 
 
