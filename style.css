@@ -18,6 +18,7 @@
 
 .btn:hover {
       background-color: rgb(16, 138, 187);
+      cursor: pointer;
 }
 
 .score-container {
