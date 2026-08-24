@@ -10,10 +10,11 @@
       border: 1rem;
       border-radius: 50%;
       background-color: rgb(8, 20, 101);
-      margin-top: 3rem;
+      margin-top: 1.5rem;
       margin-left: 0.8rem;
       font-size: 2.6rem;
-    }
+      transition: background-color 0.18s ease;
+}
 
 .reset-btn {
       padding: 1.5rem;
